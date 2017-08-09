@@ -81,3 +81,9 @@
     border-radius: 100%;
     float: left;
 }
+
+@media screen and (max-width:720px){
+    .col-1-5 {
+        width: 80%;
+    }
+}
