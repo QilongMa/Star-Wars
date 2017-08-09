@@ -16,8 +16,7 @@ class Film extends React.Component{
                 
                         </div>
                         <div className="toggle-play-button">
-                            <i className="fa fa-pause"
-                               onClick={this.props.handleClick}> </i>
+                            <i className="fa fa-pause"> </i>
                         </div>
                     </div>
             

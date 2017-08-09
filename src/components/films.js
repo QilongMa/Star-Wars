@@ -11,15 +11,12 @@ class Films extends React.Component{
         this.props.getFilms();
     }
     
-    handleClick(){
-        alert('click this image')
-    }
     
     render(){
         if(this.props.films.films && this.props.films.films.length > 0) {
             const filmsList = this.props.films.films.map((film, index) => {
                 return (
-                    <Film film={film} key={index} handleClick={this.handleClick.bind(this)}/>
+                    <Film film={film} key={index}/>
                 )
             });
             
