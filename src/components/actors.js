@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getActors} from '../actions/actorsAction';
@@ -24,6 +25,7 @@ class Actors extends React.Component{
             });
             return(
                 <div>
+                    <Link to="/"><h2>Home</h2></Link>
                     <h2>Characters In [ {this.props.film.title} ]</h2>
                     {actors}
                 </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import {selectedFilm} from '../actions/filmsAction';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-
+import background from '../images/star_ship.jpg';
 
 class Film extends React.Component{
     render(){
@@ -12,7 +12,7 @@ class Film extends React.Component{
             <div className="col-1-5 clearfix">
                 <div className="film-card">
                     <div className="film-card-container" >
-                        <div className="film-card-image" style={{backgroundImage: `url(https://cdn.pixabay.com/photo/2017/06/03/18/21/star-wars-2369317_960_720.png)`}}>
+                        <div className="film-card-image" style={{backgroundImage: `url(${background})`}}>
                 
                         </div>
                         <div className="toggle-play-button">
